@@ -1,4 +1,5 @@
 package ua.com.alevel.classworks.lesson10.geometry;
 
-public class Shape {
+abstract class Shape {
+    public abstract double getArea();
 }
