@@ -1,6 +1,13 @@
 package ua.com.alevel.classworks.lesson10.geometry;
 
 public class Rectangle extends Shape {
+
+    static void printParam(){
+        System.out.println();
+    }
+    private  double height;
+    private double width;
+
     public void setHeight(double height) {
         this.height = height;
     }
@@ -17,16 +24,16 @@ public class Rectangle extends Shape {
         return width;
     }
 
-    private double height;
-    private double width;
 
-    Rectangle(double height, double width){
+    Rectangle(double height, double width) {
         this.height = height;
         this.width = width;
     }
 
     @Override
     public double getArea() {
-        return getWidth()*getHeight();
+        return getWidth() * getHeight();
     }
+
+
 }
